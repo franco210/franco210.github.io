@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="DesignCSS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
+    <title>CV Franco Gentile</title>
+</head>
+<body>
+<div class="contenedor">  
+    <!--header-->
+    <div class="header">
+        <div class="option" ><a href><h2 class="option1"  >Home</h2></a></div>
+        <div></div> <!--none-->
+        <div class="option" ><a href="#aboutme"><h2 class="option1">Sobre mi</h2></a></div>
+        <div></div>
+        <div class="option" ><a href="#contactate"><h2 class="option1">Contacto</h2></a></div>
+        <script src="function.js"></script> 
+    </div>
+    <!--Encabezado-->
+    <div class="contenedor1">
+        <div class="caja1">
+        <h1 class="nombreyapellido">H. Rackham</h1>
+        <h2 class="estudiante">Lorem ipsum dolor sit amet</h2>
+        </div>
+    </div>
+
+    <!--Subencabezado (Barra celeste)-->
+    <div class="contenedor2" >
+        <div class="caja2"></div>
+        <div class="caja3"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagen" src="C:\Users\franc\Desktop\DesarrolloWEB\ImagenCV2.png" alt="CV Franco Gentile"/></div>
+        <div class="caja4"></div>
+    </div>
+
+    <!--Contenido-->
+    <div id="aboutme" class="contenedor3">
+        <div class="caja5">
+            <div class="contactfixed">
+                <div class="numerodetelefono"><a href="https://api.whatsapp.com/send?phone=542474471834&text=hola,%20¿qué%20tal%20estás?" style="color:rgb(235 196 24)"><img  src="whatsapp.png" alt="imagen de un telefono" width="30" height="30"/>+542474471834</a></div>
+                <div class="email"><a href="mailto:fgentile@fi.uba.ar" style="color:rgb(235 196 24)"><img src="email.png" alt="imagen del email" width="30" height="30"/>fgentile@fi.uba.ar</a></div>
+                <div class="ubicacion"><a href="https://www.google.com/maps/place/Recoleta,+CABA/@-34.5848277,-58.3963429,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcca99c609fc2f:0x392ca99351808a75!8m2!3d-34.5873825!4d-58.3972762" style="color:rgb(235 196 24)"><img src="ubicacion.png" alt="imagen de ubicacion" width="30" height="30" />CABA, Recoleta</a></div>
+                <div class="github"><a href="https://github.com/franco210"style="color:rgb(235 196 24)"> <img src="github.png" alt="imagen de github" width="30" height="30" />franco210</a></div>
+            </div>
+        </div>
+        <div class="caja6">
+            <div></div> <!--none-->
+            <div class="sobre_mi_box"><h3 class="caja6letters">Sobre mi</h3><p class="caja6letters">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p></div>
+            <div class="caja7">
+                <div class="educacion_y_idiomas"><h3 class="caja6letters">EDUCACIÓN</h3><a href="https://www.fi.uba.ar/" style="color:rgb(235 196 24)"><h4 class="caja6letters">Universidad de Buenos Aires</h4></a><p class="caja6letters">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a href="https://www.facebook.com/escuelatecnica.salto/" style="color:rgb(235 196 24)"><h4 class="caja6letters">Escuela Secundaria Dr. Antonio Montes</h4></a><p class="caja6letters">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><h3 class="caja6letters">IDIOMAS</h3><h4 class="caja6letters">Idioma Inglés</h4><p class="caja6letters">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                <div class="cursos_y_habilidades"><h3 class="caja6letters">CURSOS Y HABILIDADES</h3 class="caja6letters"><h4 class="caja6letters">Habilidades computacionales</h4><p class="caja6letters">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p><h4 class="caja6letters">Lenguajes de programación</h4><p class="caja6letters">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 class="caja6letters">Experiencias</h3>
+                    <ul type="A">
+                        <li> <a href="https://www.argentina.gob.ar/produccion/argentina-programa/primera-etapa" style="color:rgb(235 196 24)"><h4 class="caja6letters">Sé programar</h4></a><p class="caja6letters">Argentina programa(2022)</p></li>
+            
+                    </ul>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="contenedor4">
+        <div class="barra"></div>
+        <div class="contacto"><h4 id="change">Contactate</h4></div> <!--Contactate-->
+        <div id="contactate" class="formulario">
+            <form action="https://formsubmit.co/francogentile01@gmail.com" method="POST" name="formulario1">
+                <input class="casilla" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                <input class="casilla" type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
+                <input class="casilla" type="email" id="email" name="email" placeholder="Ingrese su email" required>
+                <input class="casilla" type="text" id="motivo" name="motivo" placeholder="Motivo del contacto" required>
+                <input id="send" class="botons" onclick="captura()" type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+
+</div> 
+<script src="function.js"></script> 
+</body>
+</html>
